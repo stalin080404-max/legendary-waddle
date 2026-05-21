@@ -1,25 +1,30 @@
-"""this is a code for multiplying """
+# Main.py
 
+"""This module for blablabla"""
 
-print("Script started") 
+import double_it    # first way to import
 
+# from double_it import double_it
 
-def prod_integers(num1: int, num2: int) -> int:
+X_INIT: int = 1
+
+def prod_integers(old_inventory: int, new_inventory: int) -> int:
     """_summary_
-
-    Args:
-        num1 (int): _description_
-        num2 (int): _description_
-
-    Returns:
-        int: _description_
+    :param num1: _description_
+    :type num1: dict[str, int]
+    :param num2: _description_
+    :type num2: list[int]
+    :return: _description_
+    :rtype: int
     """
 
+    y = old_inventory + new_inventory + X_INIT
+
+    result = double_it.double_int(y)
+
+    return result
 
 
-    x = 1
-
-    return (num1 * num2 ) + x
-
-
-print(prod_integers(1,3))
+if __name__ == "__main__":
+    print(prod_integers(1, 2))
+    
