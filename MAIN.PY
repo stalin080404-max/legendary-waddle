@@ -3,6 +3,7 @@
 """This module for blablabla"""
 
 import double_it    # first way to import
+import sys
 
 # from double_it import double_it
 
@@ -26,5 +27,9 @@ def prod_integers(old_inventory: int, new_inventory: int) -> int:
 
 
 if __name__ == "__main__":
-    print(prod_integers(1, 2))
     
+    print(sys.argv)
+    num1 = int(sys.argv[1])
+    num2 = int(sys.argv[2])
+    
+    print(print(prod_integers(num1, num2)))
